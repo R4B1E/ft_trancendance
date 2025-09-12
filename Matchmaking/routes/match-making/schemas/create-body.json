@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "$id": "schema:room:create:body",
+    "required": [
+        "game_mode",
+        "event"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "game_mode": {
+            "type": "string",
+            "enum": [
+                "tournament",
+                "1v1"
+            ]
+        },
+        "event": {
+            "type": "string",
+            "enum": [
+                "JoinGame",
+                "CreateGame",
+                "JoinQueue"
+            ]
+        }
+    },
+    "if": {
+        "properties": { 
+            "event": { 
+                "const": "JoinGame" 
+            }
+        }
+    },
+    "then": {
+        "properties": { 
+            "roomid": {
+                "type": "string"
+            }
+        },
+        "required": ["roomid"]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "$id": "schema:room:update:params",
+    "required": [
+        "clientid",
+        "roomid"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "clientid": {
+            "type": "string"
+        },
+        "roomid": {
+            "type": "string"
+        }
+    }
+}

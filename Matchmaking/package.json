@@ -1,0 +1,41 @@
+{
+  "name": "tournament",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "start": "fastify start --options app.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "db:push": "npx prisma db push",
+    "dev": "npm run start -- --watch --pretty-logs",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^6.0.0",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/env": "^5.0.2",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/mongodb": "^9.0.2",
+    "@fastify/sensible": "^6.0.0",
+    "@fastify/swagger": "^9.5.1",
+    "@fastify/websocket": "^11.2.0",
+    "@prisma/client": "^6.16.0",
+    "ably": "^2.11.1",
+    "fastify": "^5.0.0",
+    "fastify-cli": "^7.4.0",
+    "fastify-plugin": "^5.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.16.0",
+    "standard": "^17.1.2"
+  }
+}

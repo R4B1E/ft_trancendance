@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "$id": "schema:room",
+  "additionalProperties": false,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "RoomId": {
+      "type": "string"
+    },
+    "Host": {
+      "type": "string"
+    },
+    "MaxPlayers": {
+      "type": "number"
+    },
+    "TotalPlayers": {
+      "type": "number"
+    },
+    "Players": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "game_mode": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "EndedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

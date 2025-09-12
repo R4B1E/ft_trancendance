@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "$id": "schema:room:create:response",
+    "required": [
+        "RoomId"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "RoomId": {
+            "type": "string"
+        }
+    }
+}

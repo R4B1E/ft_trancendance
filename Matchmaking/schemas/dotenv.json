@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "$id": "schema:dotenv",
+    "required": [
+        "MONGO_URL",
+        "JWT_SECRET_KEY"
+    ],
+    "properties": {
+        "NODE_ENV": {
+            "type": "string",
+            "default": "development"
+        },
+        "PORT": {
+            "type": "integer",
+            "default": 3000
+        },
+        "MONGO_URL": {
+            "type": "string"
+        },
+        "JWT_SECRET_KEY": {
+            "type": "string"
+        }
+    }
+}
