@@ -8,6 +8,15 @@ import Realtime from 'src/app/'
 const realtime = Realtime("ws://localhost:8080", {reconnect : true, reconnectMaxDelays: 20_000 /*20s*/, heartbeatIntervalMs: 30_000 /*30s*/})
 ```
 
+## OnConnection :
+Wait for Websocket connection to be opened
+### Example
+```javascript
+realtime.onConnection((event) => {
+    /*Do some stuff when the Websocket connection is opened*/
+})
+```
+
 ## Publish :
 enables you to send a message to specific a channel :
 ### Example
